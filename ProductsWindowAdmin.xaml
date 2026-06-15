@@ -1,0 +1,38 @@
+﻿<Window x:Class="DemoTest.ProductsWindowAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoTest"
+        mc:Ignorable="d"
+        Title="Каталог товаров" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="ProductsDataGrid" HorizontalAlignment="Left" Height="392" VerticalAlignment="Bottom" Width="792" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="ProductArt" Header="Артикул" Binding="{Binding ProductArt}"/>
+                <DataGridTextColumn x:Name="ProductName" Binding="{Binding Name}" Header="Наименование"/>
+                <DataGridTextColumn x:Name="Count" Header="Количество" Binding="{Binding Count}"/>
+                <DataGridTextColumn x:Name="Price" Binding="{Binding Price}" Header="Цена"/>
+                <DataGridTextColumn x:Name="Supplier" Binding="{Binding Supplier}" Header="Поставщик"/>
+                <DataGridTextColumn x:Name="Manufacturer" Binding="{Binding Manufacturer}" Header="Производитель"/>
+                <DataGridTextColumn x:Name="ProductCategory" Header="Категория" Binding="{Binding Category}"/>
+                <DataGridTextColumn x:Name="Discount" Binding="{Binding Discount}" Header="Скидка"/>
+                <DataGridTextColumn x:Name="Quantity" Header="Остаток" Binding="{Binding Quantity}"/>
+                <DataGridTextColumn x:Name="Discription" Header="Описание" Binding="{Binding Description}"/>
+                <DataGridTextColumn x:Name="Photo" Header="Фото" Binding="{Binding Photo}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="26,7,0,0" TextWrapping="Wrap" Text="Менеджер" VerticalAlignment="Top" Background="#FFD7D9FF" Grid.Column="1"/>
+        <TextBox x:Name="SearchTextBox" HorizontalAlignment="Left" Height="23" Margin="10,4,0,0" TextWrapping="Wrap" Text="Поиск" VerticalAlignment="Top" Width="120" TextChanged="SearchTextBox_TextChanged"/>
+        <ComboBox x:Name="DiscountComboBox" HorizontalAlignment="Left" Margin="143,5,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="DiscountComboBox_SelectionChanged"/>
+        <ComboBox x:Name="SortComboBox" HorizontalAlignment="Left" Margin="276,5,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="SortComboBox_SelectionChanged"/>
+        <Button x:Name="OrdersBtn" Content="Заказы" HorizontalAlignment="Left" Margin="425,4,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.52,0.45" Click="OrdersBtn_Click"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="752,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Background="#FFBF7777" Text="Админ"/></TextBlock>
+        <Button x:Name="AddBtn" Content="Добавление" HorizontalAlignment="Left" Margin="535,4,0,0" VerticalAlignment="Top" Width="102" Click="AddBtn_Click"/>
+        <Button x:Name="EditBtn" Content="Редактирование" HorizontalAlignment="Left" Margin="642,4,0,0" VerticalAlignment="Top" Width="102" Click="EditBtn_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿<Window x:Class="DemoTest.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoTest"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="116" Margin="534,31,0,0" Stroke="Black" VerticalAlignment="Top" Width="233"/>
+
+        <TextBlock x:Name="ProductArtTextBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Артикул" VerticalAlignment="Top"/>
+        <TextBox x:Name="ProductArtTextBox" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="475"/>
+
+        <TextBlock x:Name="ProductNameTextBlock" HorizontalAlignment="Left" Margin="10,69,0,0" TextWrapping="Wrap" Text="Наименование" VerticalAlignment="Top" RenderTransformOrigin="0.168,-0.431"/>
+        <TextBox x:Name="ProductNameTextBox" HorizontalAlignment="Left" Height="23" Margin="10,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="475"/>
+
+        <TextBlock x:Name="CountTextBlock" HorizontalAlignment="Left" Margin="10,131,0,0" TextWrapping="Wrap" Text="Количество" VerticalAlignment="Top"/>
+        <TextBox x:Name="CountTextBox" HorizontalAlignment="Left" Height="23" Margin="10,152,0,0" TextWrapping="Wrap" Text="шт." VerticalAlignment="Top" Width="475"/>
+
+        <TextBlock x:Name="PriceTextBlock" HorizontalAlignment="Left" Margin="10,193,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top"/>
+        <TextBox x:Name="PriceTextBox" HorizontalAlignment="Left" Height="23" Margin="10,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="475"/>
+
+        <TextBlock x:Name="SuppliertextBlock" HorizontalAlignment="Left" Margin="10,258,0,0" TextWrapping="Wrap" Text="Поставщик" VerticalAlignment="Top"/>
+        <ComboBox x:Name="SupplierComboBox" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="SupplierComboBox_SelectionChanged"/>
+
+        <TextBlock x:Name="Manufacturer" HorizontalAlignment="Left" Margin="184,258,0,0" TextWrapping="Wrap" Text="Производитель" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ManufacturerComboBox" HorizontalAlignment="Left" Margin="184,279,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ManufacturerComboBox_SelectionChanged"/>
+
+        <TextBlock x:Name="ProductCategoryTextBlock" HorizontalAlignment="Left" Margin="359,258,0,0" TextWrapping="Wrap" Text="Категория" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ProductCategoryComboBox" HorizontalAlignment="Left" Margin="359,279,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ProductCategoryComboBox_SelectionChanged"/>
+
+        <TextBlock x:Name="DiscounttextBlock" HorizontalAlignment="Left" Margin="10,319,0,0" TextWrapping="Wrap" Text="Скидка" VerticalAlignment="Top"/>
+        <TextBox x:Name="DiscountTextBox" HorizontalAlignment="Left" Height="23" Margin="10,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>
+
+        <TextBlock x:Name="QuantityTextBlock" HorizontalAlignment="Left" Margin="255,319,0,0" TextWrapping="Wrap" Text="Остаток" VerticalAlignment="Top"/>
+        <TextBox x:Name="QuantityTextBox" HorizontalAlignment="Left" Height="23" Margin="255,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224"/>
+
+        <TextBlock x:Name="PhotoTextBlock" HorizontalAlignment="Left" Margin="627,77,0,0" TextWrapping="Wrap" Text="ФОТО" VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="DiscriptionTextBlock" HorizontalAlignment="Left" Margin="534,153,0,0" TextWrapping="Wrap" Text="Описание" VerticalAlignment="Top"/>
+        <TextBox x:Name="DiscriptionTextBox" HorizontalAlignment="Left" Height="189" Margin="534,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
+
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="233,379,0,0" VerticalAlignment="Top" Width="129" Background="#FF00F3FF" Click="AddButton_Click"/>
+
+        <Button x:Name="BackButton" Content="Отмена" HorizontalAlignment="Left" Margin="381,379,0,0" VerticalAlignment="Top" Width="132" Background="#FFB0C2FF" Click="BackButton_Click"/>
+
+    </Grid>
+</Window>

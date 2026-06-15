@@ -1,0 +1,18 @@
+﻿<Window x:Class="DemoTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoTest"
+        mc:Ignorable="d"
+        Title="АВТОРИЗАЦИЯ" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="LogintextBlock" HorizontalAlignment="Left" Margin="84,83,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top"/>
+        <TextBox x:Name="LoginTextBox" HorizontalAlignment="Left" Height="23" Margin="84,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332"/>
+        <TextBlock x:Name="PasswordTextBlock" HorizontalAlignment="Left" Margin="84,147,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="23" Margin="84,168,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="332"/>
+        <Button x:Name="LoginBtn" Content="Войти" HorizontalAlignment="Left" Margin="84,225,0,0" VerticalAlignment="Top" Width="148" Click="LoginBtn_Click"/>
+        <Button x:Name="LoginBtnGuest" Content="Войти как гость" HorizontalAlignment="Left" Margin="268,225,0,0" VerticalAlignment="Top" Width="148" Click="LoginBtnGuest_Click"/>
+
+    </Grid>
+</Window>
